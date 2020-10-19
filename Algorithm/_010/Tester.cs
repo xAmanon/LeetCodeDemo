@@ -1,5 +1,5 @@
 using Xunit;
-namespace Algorithm._10
+namespace Algorithm._010
 {
     public class Tester
     {

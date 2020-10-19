@@ -1,5 +1,5 @@
 using System;
-namespace Algorithm._10
+namespace Algorithm._010
 {
     public class Solution01
     {
