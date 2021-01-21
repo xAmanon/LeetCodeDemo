@@ -11,20 +11,25 @@ namespace Algorithm._011
             var i= 0;
             var j=height.Length - 1;
 
+            var lval = height[i];
+            var rval = height[j];
+
             while(i < j)
             {
-                var lval = height[i];
-                var rval = height[j];
+                lval = height[i];
+                rval = height[j];
 
                 if( lval < rval )
                 {
                     max= Math.Max( lval * (j-i),max);
                     i++;
+                    while(i<j&&lval>=height[i]) i++;
                 }
                 else
                 {
                     max= Math.Max(rval * (j-i),max);
                     j--;
+                    while(i<j&&rval>=height[j]) j--;
                 }
                 
             }
